@@ -25,7 +25,7 @@ This setting is disabled by default.
 ### Enable CSRF Protection
 
 {% hint style="danger" %}
-**DO _NOT_ ENABLE THIS SETTING UNLESS YOU UNDERSTAND WHAT YOU ARE DOING!**
+**This is an advanced setting.** We do not recommend enabling it unless you understand the implications of doing so.
 {% endhint %}
 
 CSRF stands for **Cross-Site Request Forgery**. When this setting is enabled, all external API access that alters Overseerr application data is blocked.
