@@ -8,6 +8,7 @@ import { useToasts } from 'react-toast-notifications';
 import useSWR from 'swr';
 import Bolt from '../../assets/bolt.svg';
 import DiscordLogo from '../../assets/extlogos/discord.svg';
+import LunaSeaLogo from '../../assets/extlogos/lunasea.svg';
 import PushbulletLogo from '../../assets/extlogos/pushbullet.svg';
 import PushoverLogo from '../../assets/extlogos/pushover.svg';
 import SlackLogo from '../../assets/extlogos/slack.svg';
@@ -81,6 +82,17 @@ const SettingsNotifications: React.FC = ({ children }) => {
       ),
       route: '/settings/notifications/discord',
       regex: /^\/settings\/notifications\/discord/,
+    },
+    {
+      text: 'LunaSea',
+      content: (
+        <span className="flex items-center">
+          <LunaSeaLogo className="h-4 mr-2" />
+          LunaSea
+        </span>
+      ),
+      route: '/settings/notifications/lunasea',
+      regex: /^\/settings\/notifications\/lunasea/,
     },
     {
       text: 'Pushbullet',
